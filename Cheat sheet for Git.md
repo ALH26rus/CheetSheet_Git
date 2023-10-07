@@ -1,13 +1,13 @@
-#Cheat sheet for Git
-Hello my dear friend!
+# Cheat sheet for Git 
+Hello my dear friend! 
 This cheat sheet contains the most common commands for working in Git.
 
-##0. Intro
+## 0. Intro
 One of the key features of modern version control systems (**VCS** or **SCM**) is support for parallel work by several users, including on one file. This is why VCS is so popular among IT teams.
 Git is one of many VCS.
 Once you install Git and run it, the command line (**CLI**) will appear. In the future, we will have to conduct all our operations through it.
 
-##1. Навигация
+## 1. Навигация
 `cd` - сменить директорию *(change directory)*;
 `cd ..` - перейти на уровень выше, в родительскую папку;
 `cd ~` - перейти в домашнюю директорию;
@@ -77,7 +77,7 @@ SSH использует пару ключей для обеспечения б�
 `ls -a ~/.ssh`
  * После выполнения команды **ssh-keygen** будет создано два файла — **id_ed25519** и **id_ed25519.pub** (или **id_rsa** и **id_rsa.pub** — в зависимости от того, какой алгоритм вы использовали).
    * **id_ed25519/id_rsa** - приватный ключ (файл без .pub в конце);
-   * **id_ed25519.pub/id_rsa.pub** - публичный ключ (на это указывает расширение .pub);*
+   * **id_ed25519.pub/id_rsa.pub** - публичный ключ (на это указывает расширение .pub);
  * Скопируйте содержимое файла с публичным ключом в буфер обмена:
 `$ clip < ~/.ssh/id_rsa.pub` или `$ clip < ~/.ssh/id_ed25519.pub`
 *(Если `clip` не сработает, выведите содержимое файла с помощью `cat ~/.ssh/id_rsa.pub` или `cat ~/.ssh/id_ed25519.pub` и скопируйте вывод в буфер обмена из консоли)*
